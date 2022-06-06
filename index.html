@@ -4,9 +4,78 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
-    
+    <header class="grid" id="header">
+        <a href="index.html" class="logo">
+            <p>Bendik</p>
+        </a>
+        <nav>
+            <a href="index.html#aboutMe">About me</a>
+            <a href="index.html#projects">My projects</a>
+        </nav>
+    </header>
+    <main class="grid" id="index">
+        <section id="info" class="grid">
+            <h2>Find out more about me and what i do</h2>
+            <img src="./assets/bendik.jpg" alt="bendik in front of the camera, the city dubrivnik in the background">
+            <div class="flex">
+                <a class="button" href="index.html#aboutMe">About me</a>
+                <a class="button" href="index.html#knowledge">what i know</a>
+                <a class="button" href="index.html#projects">my projects</a>
+            </div>
+        </section>
+        <section id="aboutMe" class="grid">
+            <h2>About me</h2>
+            <ul>
+                <li>Im 22 years old</li>
+                <li>lived in Bergen my whole life</li>
+                <li>Have an intrest for web design and programming</li>
+                <li>Currently studying Front end development at Noroff</li>
+                <li>A hobby photographer</li>
+            </ul>
+        </section>
+        <section id="knowledge" >
+            <h2>Programs and skills i know</h2>
+            <div id="programs" class="grid">
+                <div id="html"><img src="./assets/htmlmark.svg" alt="the logo of html"><h3>Html</h3></div>
+                <div id="css"><img src="./assets/cssmark.svg" alt="the logo of css"><h3>css</h3></div>
+                <div id="javascript"><img src="./assets/javascriptlogo.svg" alt="the logo of javascript"><h3>javascript</h3></div>
+                <div id="figma"><img src="assets/Figma-logo.svg" alt="the logo of figma"><h3>Figma</h3></div>
+            </div>
+        </section>
+        <section id="projects" class="grid">
+            <h2>My work</h2>
+            <div id="myProjects" class="grid">
+            <article id="museum" class="grid">
+                <img src="./assets/museumlogo.svg" alt="the community Science Museum logo of an atom">
+                <h3>Community science museum</h3>
+                <p>A school project about a local museum. in this project i learned to think about the target audience, as well as making the design suit the audience..</p>
+                <a class="button" href="communitysciencemuseum.html">About the project</a>
+            </article>
+            <article id="blog" class="grid">
+                <img src="./assets/blog.svg" alt="two raceflags crossed as the logo for Formula fan blog">
+                <h3>Formula Fan Blog</h3>
+                <p>Another school project, I choose to make it about Racing. In this project I used javascript at multiple occations to get data from an Headless CMS.</p>
+                <a class="button" href="eksamen.html">About the project</a>
+            </article>
+            <article id="quality" class="grid">
+                <img src="./assets/quality.svg" alt="Noroff's logo">
+                <h3>Noroff quality</h3>
+                <p>This is an site for Noroff employees and students. Here they can filter trough relevant topics and find out what happens where</p>
+                <a class="button" href="noroffquality.html">About the project</a>
+            </article>
+        </div>
+        </section>
+    </main>
+    <footer class="flex">
+        <a class="button" href="index.html#header">Back to top</a>
+
+    </footer>
 </body>
 </html>

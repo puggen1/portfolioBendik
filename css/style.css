@@ -1,0 +1,161 @@
+:root{
+    /*maybe*/
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: linear-gradient(180deg, #6AA7AA 0%, #B2F3F7 49.48%, #D0FCFF 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0px;
+    
+}
+.grid{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+.flex{
+    display: flex;
+}
+/*text*/
+h1, h2, h3, h4, a{
+    font-family: 'Montserrat', sans-serif;
+}
+p, li{
+    font-family: 'Roboto', sans-serif;
+}
+li{
+    margin:8px 2px
+}
+/*buttons and relevant*/
+a.button{
+    background-color: #6AA7AA;
+    color: black;
+    text-decoration: none;
+    padding:10px 20px;
+    border-radius: 2px;
+    font-weight: 600;
+}
+a.button:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+/**********************************header********************************************/
+header, footer{
+    background-color: #F7CEB2;
+    margin: 0px;
+    height: 120px;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+    
+}
+.logo{
+    grid-column: 2/3;
+    background-color: #AB7A59;
+    transform: rotate(45deg);
+    height: 80px;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo p{
+    transform: rotate(-45deg);
+    margin:0px;
+    color: white;
+    font-size: 1.5rem;
+
+}
+nav{
+    grid-column: 3/4;
+}
+header a{
+    text-decoration: none;
+    color:#000;
+    font-size: 1.3rem;
+    margin: 18px;
+    
+}
+/******************************************************************************/
+
+main{
+    row-gap: 220px;
+    padding-bottom: 100px;
+}
+/**********************************index content********************************************/
+section#info{
+    row-gap: 80px;
+    margin-top: 50px;
+}
+#info img{
+    max-width: 20%;
+    border-radius: 100%;
+}
+section#info div{
+    column-gap: 30px;
+}
+section#projects h2{
+    margin-bottom: 100px;
+}
+div#myProjects{
+    row-gap: 200px;
+}
+/********************programs*********************/
+section#knowledge{
+    text-align: center;
+}
+div#programs{
+    grid-template-areas: "topleft . topright"
+    "botleft . botright";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 80px 20px;
+    margin-top: 50px;
+}
+div#programs img{
+    width: 150px;
+    height: 150px;
+}
+div#html{
+    grid-area: topleft;
+}
+div#css{
+    grid-area: topright;
+}
+div#javascript{
+    grid-area: botleft;
+}
+div#figma{
+    grid-area: botright;
+}
+
+
+
+main#index article{
+    grid-template-areas:
+    "image name name"
+    "image excerpt excerpt"
+    "image button button";
+    column-gap: 50px;
+}
+main#index article img{
+    grid-area: image;
+}
+main#index article h3{
+    grid-area: name;
+}
+main#index article p{
+    grid-area: excerpt;
+    width: 300px;
+}
+main#index article a{
+    grid-area: button;
+}
+footer{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
