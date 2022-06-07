@@ -24,8 +24,16 @@ body{
 h1, h2, h3, h4, a{
     font-family: 'Montserrat', sans-serif;
 }
+h1, h2{
+    font-size: 2rem;
+}
+h3{
+    font-size: 1.8rem;
+}
 p, li{
     font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem;
+
 }
 li{
     margin:8px 2px
@@ -35,6 +43,7 @@ li{
 }
 .link{
     margin-top: 10px;
+    font-size: 1.5rem;
 }
 .link p{
     margin: 2px;
@@ -173,10 +182,20 @@ footer{
     flex-direction: column;
 }
 /*about specific page */
+main#project{
+    row-gap: 100px;
+}
+section#topText p{
+    max-width: 65%;
+    text-align: center;
+}
 #about p{
     max-width: 430px;
+    
 }
+
 #about ul{
+    
     width: 100%;
     margin-top: 0px;
 }
@@ -184,40 +203,42 @@ footer{
     width: 100%;
     margin-bottom: 0px;
 }
+
 section#finalProduct{
-    row-gap: 100px;
 }
 section#finalProduct p{
     max-width: 400px;
 }
 .product{
-    grid-template-columns: 1fr 1fr;
-    max-width: 70%;
-    align-items: start;
-    column-gap: 10px;
+    grid-template-columns: 1fr  1fr;
+    height: 100vh;
+    column-gap: 50px;
 }
 section#finalProduct h4{
     grid-column: 1/3;
+    font-size: 1.8rem;
+}
+.product p{
+    font-size: 1.5rem;
+    line-height: 50px;
 }
 .look{
     row-gap: 50px;
 }
 .mobile img{
-    max-width: 60%;
+    max-width: 20vw;
     border: solid 10px black;
     border-radius: 20px;
 }
 .tablet img{
-    max-width: 80%;
+    max-width: 30vw;
     border: solid 20px black;
     border-radius: 20px;
 }
-.pc p{
-grid-column: 1/3;
-}
+
 .pc img{
-    grid-column: 1/3;
-    max-width: 90%;
+    grid-column: 2/3;
+    max-width: 40vw;
     border: solid 10px black;
     border-radius: 5px;
 }
