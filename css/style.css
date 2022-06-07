@@ -30,6 +30,19 @@ p, li{
 li{
     margin:8px 2px
 }
+.bold{
+    font-weight: 600;
+}
+.link{
+    margin-top: 10px;
+}
+.link p{
+    margin: 2px;
+}
+.link a{
+    text-decoration: underline;
+    color: black;
+}
 /*buttons and relevant*/
 a.button{
     background-color: #6AA7AA;
@@ -158,4 +171,29 @@ footer{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+/*about specific page */
+#about p{
+    max-width: 430px;
+}
+#about ul{
+    width: 100%;
+    margin-top: 0px;
+}
+.listInfo{
+    width: 100%;
+    margin-bottom: 0px;
+}
+section#finalProduct p{
+    max-width: 400px;
+}
+.product{
+    grid-template-columns: 1fr 1fr;
+}
+section#finalProduct h4{
+    grid-column: 1/3;
+}
+
+.mobile img{
+    max-width: 400px;
 }
