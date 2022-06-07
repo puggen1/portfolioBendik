@@ -184,16 +184,41 @@ footer{
     width: 100%;
     margin-bottom: 0px;
 }
+section#finalProduct{
+    row-gap: 100px;
+}
 section#finalProduct p{
     max-width: 400px;
 }
 .product{
     grid-template-columns: 1fr 1fr;
+    max-width: 70%;
+    align-items: start;
+    column-gap: 10px;
 }
 section#finalProduct h4{
     grid-column: 1/3;
 }
-
-.mobile img{
-    max-width: 400px;
+.look{
+    row-gap: 50px;
 }
+.mobile img{
+    max-width: 60%;
+    border: solid 10px black;
+    border-radius: 20px;
+}
+.tablet img{
+    max-width: 80%;
+    border: solid 20px black;
+    border-radius: 20px;
+}
+.pc p{
+grid-column: 1/3;
+}
+.pc img{
+    grid-column: 1/3;
+    max-width: 90%;
+    border: solid 10px black;
+    border-radius: 5px;
+}
+
