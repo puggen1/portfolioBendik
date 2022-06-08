@@ -314,5 +314,77 @@ section#learned h3, section#learned h2{
 
 }
 @media only screen and (max-width:600px){
+    header{
+        padding: 0px;
+    }   
+    header a{
+        margin: 10px;
+    }
+    h1{
+        max-width: 90%;
+        text-align: center;
+    }
+  
+   
+    section#info{
+        row-gap: 20px;
+    }
+    section#info img{
+        max-width: 50%;
+    }
+    main#index article{
+        grid-template-areas: "name"
+        "image"
+        "excerpt"
+        "button";
+        grid-template-columns: 1fr;
+    }
+    main#index article h3{
+        text-align: center;
+    }
+    section#info > div{
+        width: 35%;
+        text-align: center;
+        flex-direction: column;
+        row-gap: 25px;
+    }
+    div#programs{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas: "topleft topright"
+        "botleft botright";
+    }
+    div#programs > div > img{
+        max-width: 100px;
+        max-height: 100px;
+    }
+
+
+/*project page*/
+section#topText p{
+    max-width: 80%;
+}
+    #about p, section#finalProduct p{
+        max-width: 80%;
+        margin: 0 auto;
+    }
+    ul{
+        max-width: 80%;
+    }
+    section#finalProduct .product p{
+        max-width: 90%;
+        line-height: normal;
+        font-size: 1.3rem;
+    }
+    .product{
+        
+        row-gap: 20px;
+    }
+    .product h4{
+        text-align: center;
+    }
+    .product img{
+        max-width: 80vw;
+    }
 
 }
