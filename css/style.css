@@ -69,13 +69,14 @@ a.button:hover{
 header, footer{
     background-color: #F7CEB2;
     margin: 0px;
+    padding: 0px 20px;
     height: 120px;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 0.5fr 1fr 0.5fr 0.5fr 0.5fr;
     
     
 }
 .logo{
-    grid-column: 2/3;
+    grid-column: 3/4;
     background-color: #AB7A59;
     transform: rotate(45deg);
     height: 80px;
@@ -91,8 +92,11 @@ header, footer{
     font-size: 1.5rem;
 
 }
-nav{
-    grid-column: 3/4;
+.navOne{
+    grid-column: 5/6;
+}
+.navTwo{
+    grid-column: 6/7;
 }
 header a{
     text-decoration: none;
@@ -214,7 +218,7 @@ section#finalProduct p{
     height: 100vh;
     column-gap: 50px;
 }
-section#finalProduct h4{
+.product h4{
     grid-column: 1/3;
     font-size: 1.8rem;
 }
@@ -242,4 +246,73 @@ section#finalProduct h4{
     border: solid 10px black;
     border-radius: 5px;
 }
+section#learned{
+        justify-items: start;
+        margin: 0 auto;
+}
+section#learned h3, section#learned h2{
+    margin: 0 auto;
+    text-align: center;
+}
 
+@media only screen and (max-width:1300px){
+    header{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+    .navOne{
+        grid-column: 4/5;
+    }
+    .navTwo{
+        grid-column: 5/6;
+    }
+    .logo{
+        grid-column: 3/4;
+    }
+ 
+  
+}
+
+@media only screen and (max-width:1000px){
+    header{
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
+    .navOne{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .logo{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .navTwo{
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+    main#index article{
+        grid-template-areas: "name name name"
+        "image excerpt excerpt"
+        "image button button";
+    }
+    section#finalProduct .product p{
+        max-width: 50vw;
+    }
+    .product{
+        height: auto;
+        grid-template-rows: auto auto auto;
+        grid-template-columns: 90vw;
+        column-gap: 0px;
+        margin-bottom: 10vh;
+    }
+    .product img{
+        max-height: 50vh;
+        max-width: none;
+    }
+    .product h4, .prooduct p, .product img{
+        grid-column: 1/2;
+    }
+
+}
+@media only screen and (max-width:600px){
+
+}
