@@ -399,9 +399,9 @@ section#learned h3, section#learned h2{
 
 
 /*project page*/
-section#topText p{
+    section#topText p{
     max-width: 80%;
-}
+    }
     #about p, section#finalProduct p{
         max-width: 80%;
         margin: 0 auto;
@@ -428,5 +428,27 @@ section#topText p{
     }
     section#learned ul:first-of-type{
         margin-bottom: 100px;
+    }
+}
+
+/**********************making the header fit even the smalles mobile***********************************/
+@media only screen and (max-width:370px){
+    header{
+        grid-template-columns: 1fr 0.5fr 1fr;
+    }
+    .logo{
+        width: 60px;
+        height: 60px;
+    }
+    .logo p{
+        font-size: 1.2rem;
+    }
+    .navOne, .navTwo{
+        margin: 0 auto;
+    }
+    /*link smaller*/
+
+    div.link a{
+        font-size: 1.2rem;
     }
 }
