@@ -173,16 +173,19 @@ main#index article{
     "image excerpt excerpt"
     "image button button";
     column-gap: 50px;
+    grid-template-rows: 30px auto auto;
 }
 main#index article img{
     grid-area: image;
 }
 main#index article h3{
     grid-area: name;
+    margin: 0px 10px;
 }
 main#index article p{
     grid-area: excerpt;
     width: 300px;
+    margin-bottom: 10px;
 }
 main#index article a{
     grid-area: button;
