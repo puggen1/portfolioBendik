@@ -226,9 +226,12 @@ section#topText p{
     max-width: 65%;
     text-align: center;
 }
-#about p{
+#about p, #learned p{
     max-width: 430px;
     
+}
+#learned p{
+    margin: 0 auto;
 }
 
 #about ul{
@@ -435,10 +438,11 @@ section#learned h3, section#learned h2{
     section#topText p{
     max-width: 80%;
     }
-    #about p, section#finalProduct p{
+    #about p, section#finalProduct p, #learned p{
         max-width: 80%;
         margin: 0 auto;
     }
+
     ul{
         max-width: 80%;
     }
