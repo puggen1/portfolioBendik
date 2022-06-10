@@ -194,15 +194,25 @@ footer{
     align-items: center;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto;
+    padding: 10px 20px;
+}
+footer a{
+    text-decoration: none;
+    color: black;
+}
+footer a:hover{
+    text-decoration: underline;
 }
 .email{
     grid-column: 1/2;
+    grid-row:1/3;
 }
 footer .button{
     grid-column: 2/3;
 }
 .linkedIn{
     grid-column: 3/4;
+    grid-row:1/3;
 }
 .created{
 grid-column: 2/3;
@@ -319,6 +329,9 @@ section#learned h3, section#learned h2{
         grid-template-areas: "name name name"
         "image excerpt excerpt"
         "image button button";
+    }
+    main#index article h3{
+        margin-bottom: 20px;
     }
     section#finalProduct .product p{
         max-width: 50vw;
@@ -448,6 +461,20 @@ section#learned h3, section#learned h2{
     }
     section#learned ul:first-of-type{
         margin-bottom: 100px;
+    }
+    footer .button, footer p{
+        font-size: 0.8rem;
+        text-align: center;
+    }
+    footer .button{
+        grid-column: 1/4;
+        text-align: center;
+    }
+    .email{
+        grid-row: 2/3;
+    }
+    .linkedIn{
+        grid-row: 2/3;
     }
 }
 
