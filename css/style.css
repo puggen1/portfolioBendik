@@ -192,8 +192,21 @@ main#index article a{
 }
 footer{
     align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+}
+.email{
+    grid-column: 1/2;
+}
+footer .button{
+    grid-column: 2/3;
+}
+.linkedIn{
+    grid-column: 3/4;
+}
+.created{
+grid-column: 2/3;
+grid-row: 2/3;
 }
 /*about specific page */
 main#project{
